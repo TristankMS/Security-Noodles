@@ -5,8 +5,6 @@
 param (
     [Parameter(Mandatory=$false)]
     $Target = $env:COMPUTERNAME,
-    [Parameter(Mandatory=$false)]  
-    [string] $DomainName = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain(),
     [Parameter(Mandatory=$false)]
     [string] $OutputCSVFile = ".\DomainGroups.csv",
     [Parameter(Mandatory=$false)]
